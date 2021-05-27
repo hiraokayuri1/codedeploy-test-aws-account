@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Stop all servers and start the server as a daemon
-cd /home/ec2-user/codedeploy-test-aws-web
+cd /home/ec2-user/Redger API
 # install and use node version
 nvm install 14.4.0
 nvm use 14.4.0
