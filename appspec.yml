@@ -4,11 +4,13 @@ files:
   - source: /
     destination: /home/ec2-user/codedeploy-test-aws
 hooks:
-  BeforeInstall:
+  AfterInstall:
     - location: scripts/install_dependencies
-      timeout: 300
+      timeout: 100
       runas: root
+  ApplicationStart:
     - location: scripts/start_server
-      timeout: 300
+      timeout: 100
       runas: root
+  
 
