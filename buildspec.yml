@@ -6,20 +6,22 @@ phases:
     commands:
       - echo Installing
   version: 0.2
+version: 0.2
+
 phases:
-  pre_build:
-    commands:
-      - echo Installing source NPM dependencies...
-      - npm install
-  build:
-    commands:
-      - echo Build started on `date`
-      - echo Compiling the Node.js code
-      - echo Running unit tests
-      - npm test
-  post_build:
-    commands:
-      - echo Build completed on `date`
+ build:
+   commands:
+     - echo Build started on `date`
+     - npm install
+     - npm run build:ssr
+ post_build:
+   commands:
+     - echo Build completed on `date`
+     - cp deploy/appspec.yml appspec.yml
 artifacts:
-  files:
-    - '**/*'
+ files:
+   - dist/**/*
+   - appspec.yml
+cache:
+ paths:
+   - '/root/.npm/**/*'
