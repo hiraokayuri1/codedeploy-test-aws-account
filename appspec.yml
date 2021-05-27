@@ -4,9 +4,6 @@ files:
   - source: /
     destination: /home/ec2-user/codedeploy-test-aws
 hooks:
-  BeforeInstall:
-    - location: scripts/BeforeInstallHook.sh
-      timeout: 300
-  AfterInstall:
-    - location: scripts/AfterInstallHook.sh
-      timeout: 300
+  ApplicationStart:
+    - location: /scripts/codedeploy_start.sh
+      timeout: 180
