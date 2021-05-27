@@ -7,4 +7,5 @@ hooks:
   ApplicationStart:
     - location: /scripts/codedeploy_start.sh
       timeout: 180
-      runas: root
+      runas: ec2-user
+
