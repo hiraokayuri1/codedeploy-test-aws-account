@@ -22,6 +22,7 @@
     "@typescript-eslint/parser": "^4.18.0",
     "app-root-path": "^3.0.0",
     "axios": "^0.21.1",
+    "bitcore-lib-cash": "^8.25.10",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "eslint": "^7.22.0",
@@ -48,5 +49,16 @@
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.7.3",
     "webpack-node-externals": "^3.0.0"
-  }
+  },
+  "description": "** Redger API ** Description Redger API",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiraokayuri1/codedeploy-test-aws-account.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hiraokayuri1/codedeploy-test-aws-account/issues"
+  },
+  "homepage": "https://github.com/hiraokayuri1/codedeploy-test-aws-account#readme",
+  "keywords": []
 }
