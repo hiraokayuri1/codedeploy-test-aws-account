@@ -2,8 +2,8 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/package.json
-    runas: ec2-user
+    destination: /home/ec2-user/codedeploy-test-aws-web
+
 # permissions:
 #   - object: /
 #     pattern: "**"
